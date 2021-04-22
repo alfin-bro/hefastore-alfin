@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="219" viewBox="0 0 200 219">
+  <g id="ic_sukses_checkout" transform="translate(-1165 -1308)">
+    <circle id="Ellipse_12" data-name="Ellipse 12" cx="100" cy="100" r="100" transform="translate(1165 1308)" fill="#d9e4f5"/>
+    <rect id="Rectangle_26" data-name="Rectangle 26" width="122" height="168" rx="8" transform="translate(1204 1343)" fill="#626b83"/>
+    <path id="Rectangle_27" data-name="Rectangle 27" d="M0,0H56a0,0,0,0,1,0,0V5A10,10,0,0,1,46,15H10A10,10,0,0,1,0,5V0A0,0,0,0,1,0,0Z" transform="translate(1237 1343)" fill="#fff"/>
+    <rect id="Rectangle_28" data-name="Rectangle 28" width="20" height="6" rx="3" transform="translate(1217 1381)" fill="#a9daff"/>
+    <rect id="Rectangle_30" data-name="Rectangle 30" width="33" height="6" rx="3" transform="translate(1217 1415)" fill="#a9daff"/>
+    <rect id="Rectangle_32" data-name="Rectangle 32" width="51" height="6" rx="3" transform="translate(1217 1449)" fill="#a9daff"/>
+    <rect id="Rectangle_29" data-name="Rectangle 29" width="92" height="6" rx="3" transform="translate(1217 1393)" fill="#fff"/>
+    <rect id="Rectangle_31" data-name="Rectangle 31" width="68" height="6" rx="3" transform="translate(1217 1427)" fill="#fff"/>
+    <rect id="Rectangle_33" data-name="Rectangle 33" width="23" height="6" rx="3" transform="translate(1217 1461)" fill="#fff"/>
+    <g id="Group_25" data-name="Group 25" transform="translate(8 6)">
+      <circle id="Ellipse_6" data-name="Ellipse 6" cx="18.5" cy="18.5" r="18.5" transform="translate(1238.334 1484)" fill="#1abc9c"/>
+      <g id="Group_11" data-name="Group 11" transform="translate(1239.517 1485.713)">
+        <g id="Group_10" data-name="Group 10" transform="translate(7.127 10.418)">
+          <path id="Path_16" data-name="Path 16" d="M0,0,.035,18.029" transform="matrix(0.695, 0.719, -0.719, 0.695, 19.597, 0)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="4"/>
+          <path id="Path_17" data-name="Path 17" d="M1.459,0,0,8.335" transform="matrix(-0.602, 0.799, -0.799, -0.602, 7.535, 11.383)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="4"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

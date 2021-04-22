@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Montserrat:wght@400;500;600&display=swap');
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #0000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #B7B7B7;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #EAEAEF;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    /* card special ied section */
+    .card .imgBox .overlay{
+        @apply absolute inset-0  bg-opacity-50 bg-black hidden justify-center items-center transition-all duration-500;
+    }
+    .card:hover .overlay{
+        @apply flex;
+    }
+    .card:hover h5{
+        @apply text-blue;
+    }
+    /* card special ied section */
+
+    ul.breadcrumb{
+        @apply flex flex-row items-center;
+    }
+    ul.breadcrumb li:not(:last-child) a{
+        @apply text-gray-300 font-light;
+    }
+    ul.breadcrumb li:not(:last-child)::after{
+        content:'/';
+        @apply px-4 text-gray-300;
+    }
+    ul.breadcrumb li:last-child a{
+        @apply font-medium text-blue;
+    }
+
+    .main-content-card .card:hover .wrapper{
+        @apply border-2 border-blue;
+    }
+    .main-content-card .card:hover h5{
+        @apply text-blue;
+    }
+    header nav #menu.show{
+        @apply transform translate-x-0 opacity-100 transition-transform duration-300 z-40;
+    }
+
+    .aside-menu ul.open{
+        @apply h-auto relative;
+    }
+    .aside-menu button.putar{
+        @apply -rotate-180;
+    }
+
+    .main-content.active{
+        @apply flex justify-center flex-wrap items-center;
+    }
+
+    /* description tab */
+    button.showed{
+        @apply bg-white rounded-r shadow-lg outline-none hover:bg-gray-500 focus:outline-none;
+    }
+    /* end description tab */
+}
+
+
+
+@layer utilities{
+    .streched-link{
+        @apply absolute inset-0 cursor-pointer;
+    }
+    .actived{
+        @apply text-orange;
+    }
+}
+

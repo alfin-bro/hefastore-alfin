@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="img/logo/logo_small.svg">
+    <title>Hefastore</title>
+</head>
+
+<body>
+    <!-- TITLE PAGE -->
+    <div class="flex flex-col justify-center items-center py-8 md:py-10">
+        <h3 class="text-2xl pt-2 text-blue font-semibold capitalize font-display">
+            your cart
+        </h3>
+        <p class="text-gray-300 text-md">
+            Pastikan barang anda terbayar lunas
+        </p>
+    </div>
+    <!-- END TITLE PAGE -->
+
+    <!-- START : ITEMS CART SECTION -->
+    <section class="px-6 md:px-24 py-16 z-1 ">
+        <div class="container mx-auto">
+            <!-- * Start breadcrumb -->
+            <ul class="breadcrumb">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#" aria-label="current-page">Cart Checkout</a></li>
+            </ul>
+            <!-- * End breadcrumb -->
+
+            <!-- * main content -->
+            <div class="w-full py-10 md:py-16 flex flex-col md:flex-row justify-center md:justify-between">
+                <!-- * left content items cart  -->
+                <div class="left flex flex-col md:w-7/12">
+                    <!-- * cart table -->
+                    <div id="cart" class="items-cart w-full flex flex-col">
+                        <h3 class="title-items-cart text-xl capitalize">
+                            your items
+                        </h3>
+                        <!-- * Cart empty -->
+                        <p id="cart-empty" class="hidden text-2xl font-medium text-black">Oppss.. your cart is empty <a class="underline" href="single.html">Shop Now!</a> </p>
+                        <!-- * end Cart empty -->
+                        <!-- * items cart 1 -->
+                        <div data-row="1" class="item-cart flex items-center w-full justify-between py-3">
+                            <div class="imgBox-cart relative mr-0 md:mr-4" style="width: 60px; height: 60px;">
+                                <img class="object-cover absolute h-full w-full object-center"
+                                    src="img/items/item-4.png" alt="Image items cart">
+                            </div>
+                            <div class="info-cart py-0 md:py-3 px-3 mr-10 md:mr-0">
+                                <h5 class="text-lg md:text-xl font-medium capitalize">
+                                    jeans pubb
+                                </h5>
+                                <span class="text-gray-300 text-md md:text-lg">IDR 239.000</span>
+                            </div>
+                            <div class="btn-cart-wrapper flex py-4 px-0 md:px-16 items-center">
+                                <div class="btn-qt flex items-center">
+                                    <button class="bg-gray-400 p-1 md:p-3 rounded-md focus:outline-none"><svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="21"
+                                            viewBox="0 0 21 21">
+                                            <defs>
+                                                <clipPath id="clip-path">
+                                                    <rect width="21" height="21" fill="none" />
+                                                </clipPath>
+                                            </defs>
+                                            <g id="ic_negatif" clip-path="url(#clip-path)">
+                                                <g id="Ellipse_6" data-name="Ellipse 6" fill="none" stroke="#fff"
+                                                    stroke-width="2">
+                                                    <circle cx="10.5" cy="10.5" r="10.5" stroke="none" />
+                                                    <circle cx="10.5" cy="10.5" r="9.5" fill="none" />
+                                                </g>
+                                                <g id="Group_10" data-name="Group 10"
+                                                    transform="translate(-1425.334 -621.417)">
+                                                    <path id="Path_17" data-name="Path 17" d="M0,0V10"
+                                                        transform="translate(1440.648 631.912) rotate(90)" fill="none"
+                                                        stroke="#fff" stroke-linecap="round" stroke-width="2" />
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </button>
+                                    <span class="px-4 text-xl">20</span>
+                                    <button class="bg-green p-1 md:p-3 rounded-md focus:outline-none">
+                                        <svg id="ic_plus" xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+                                            viewBox="0 0 21 21">
+                                            <g id="Ellipse_6" data-name="Ellipse 6" fill="none" stroke="#fff"
+                                                stroke-width="2">
+                                                <circle cx="10.5" cy="10.5" r="10.5" stroke="none" />
+                                                <circle cx="10.5" cy="10.5" r="9.5" fill="none" />
+                                            </g>
+                                            <g id="Group_10" data-name="Group 10"
+                                                transform="translate(-1425.334 -621.417)">
+                                                <path id="Path_16" data-name="Path 16" d="M505,1586.912v10"
+                                                    transform="translate(930.648 -960)" fill="none" stroke="#fff"
+                                                    stroke-linecap="round" stroke-width="2" />
+                                                <path id="Path_17" data-name="Path 17" d="M0,0V10"
+                                                    transform="translate(1440.648 631.912) rotate(90)" fill="none"
+                                                    stroke="#fff" stroke-linecap="round" stroke-width="2" />
+                                            </g>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="delete-btn px-3 md:px-20">
+                                <button id="btn-remove" data-delete-item="1" class="bg-red p-1 md:p-3 rounded-md focus:outline-none">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        width="21" height="21" viewBox="0 0 21 21">
+                                        <defs>
+                                            <clipPath id="clip-path">
+                                                <rect width="21" height="21" fill="none" />
+                                            </clipPath>
+                                        </defs>
+                                        <g id="ic_plus" clip-path="url(#clip-path)">
+                                            <g id="Ellipse_6" data-name="Ellipse 6" fill="none" stroke="#fff"
+                                                stroke-width="2">
+                                                <circle cx="10.5" cy="10.5" r="10.5" stroke="none" />
+                                                <circle cx="10.5" cy="10.5" r="9.5" fill="none" />
+                                            </g>
+                                            <g id="Group_10" data-name="Group 10"
+                                                transform="translate(-1425.334 -621.417)">
+                                                <path id="Path_16" data-name="Path 16" d="M505,1586.912v10"
+                                                    transform="translate(2204.211 -850.829) rotate(45)" fill="none"
+                                                    stroke="#fff" stroke-linecap="round" stroke-width="2" />
+                                                <path id="Path_17" data-name="Path 17" d="M0,0V10"
+                                                    transform="translate(1439.184 635.448) rotate(135)" fill="none"
+                                                    stroke="#fff" stroke-linecap="round" stroke-width="2" />
+                                            </g>
+                                        </g>
+                                    </svg>
+
+                                </button>
+                            </div>
+                        </div>
+                        <!-- * end items cart 1 -->
+
+                        <!-- * items cart 2 -->
+                        <div data-row="2" class="item-cart flex items-center w-full justify-between py-3">
+                            <div class="imgBox-cart relative mr-0 md:mr-4" style="width: 60px; height: 60px;">
+                                <img class="object-cover absolute h-full w-full object-center"
+                                    src="img/items/item-5.png" alt="Image items cart">
+                            </div>
+                            <div class="info-cart py-0 md:py-3 px-3 mr-10 md:mr-0">
+                                <h5 class="text-lg md:text-xl font-medium capitalize">
+                                    batik trendy
+                                </h5>
+                                <span class="text-gray-300 text-md md:text-lg">IDR 239.000</span>
+                            </div>
+                            <div class="btn-cart-wrapper flex py-4 px-0 md:px-16 items-center">
+                                <div class="btn-qt flex items-center">
+                                    <button class="bg-gray-400 p-1 md:p-3 rounded-md focus:outline-none"><svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="21"
+                                            viewBox="0 0 21 21">
+                                            <defs>
+                                                <clipPath id="clip-path">
+                                                    <rect width="21" height="21" fill="none" />
+                                                </clipPath>
+                                            </defs>
+                                            <g id="ic_negatif" clip-path="url(#clip-path)">
+                                                <g id="Ellipse_6" data-name="Ellipse 6" fill="none" stroke="#fff"
+                                                    stroke-width="2">
+                                                    <circle cx="10.5" cy="10.5" r="10.5" stroke="none" />
+                                                    <circle cx="10.5" cy="10.5" r="9.5" fill="none" />
+                                                </g>
+                                                <g id="Group_10" data-name="Group 10"
+                                                    transform="translate(-1425.334 -621.417)">
+                                                    <path id="Path_17" data-name="Path 17" d="M0,0V10"
+                                                        transform="translate(1440.648 631.912) rotate(90)" fill="none"
+                                                        stroke="#fff" stroke-linecap="round" stroke-width="2" />
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </button>
+                                    <span class="px-4 text-xl">20</span>
+                                    <button class="bg-green p-1 md:p-3 rounded-md focus:outline-none">
+                                        <svg id="ic_plus" xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+                                            viewBox="0 0 21 21">
+                                            <g id="Ellipse_6" data-name="Ellipse 6" fill="none" stroke="#fff"
+                                                stroke-width="2">
+                                                <circle cx="10.5" cy="10.5" r="10.5" stroke="none" />
+                                                <circle cx="10.5" cy="10.5" r="9.5" fill="none" />
+                                            </g>
+                                            <g id="Group_10" data-name="Group 10"
+                                                transform="translate(-1425.334 -621.417)">
+                                                <path id="Path_16" data-name="Path 16" d="M505,1586.912v10"
+                                                    transform="translate(930.648 -960)" fill="none" stroke="#fff"
+                                                    stroke-linecap="round" stroke-width="2" />
+                                                <path id="Path_17" data-name="Path 17" d="M0,0V10"
+                                                    transform="translate(1440.648 631.912) rotate(90)" fill="none"
+                                                    stroke="#fff" stroke-linecap="round" stroke-width="2" />
+                                            </g>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="delete-btn px-3 md:px-20">
+                                <button id="btn-remove" data-delete-item="2" class="bg-red p-1 md:p-3 rounded-md focus:outline-none">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        width="21" height="21" viewBox="0 0 21 21">
+                                        <defs>
+                                            <clipPath id="clip-path">
+                                                <rect width="21" height="21" fill="none" />
+                                            </clipPath>
+                                        </defs>
+                                        <g id="ic_plus" clip-path="url(#clip-path)">
+                                            <g id="Ellipse_6" data-name="Ellipse 6" fill="none" stroke="#fff"
+                                                stroke-width="2">
+                                                <circle cx="10.5" cy="10.5" r="10.5" stroke="none" />
+                                                <circle cx="10.5" cy="10.5" r="9.5" fill="none" />
+                                            </g>
+                                            <g id="Group_10" data-name="Group 10"
+                                                transform="translate(-1425.334 -621.417)">
+                                                <path id="Path_16" data-name="Path 16" d="M505,1586.912v10"
+                                                    transform="translate(2204.211 -850.829) rotate(45)" fill="none"
+                                                    stroke="#fff" stroke-linecap="round" stroke-width="2" />
+                                                <path id="Path_17" data-name="Path 17" d="M0,0V10"
+                                                    transform="translate(1439.184 635.448) rotate(135)" fill="none"
+                                                    stroke="#fff" stroke-linecap="round" stroke-width="2" />
+                                            </g>
+                                        </g>
+                                    </svg>
+
+                                </button>
+                            </div>
+                        </div>
+                        <!-- * end items cart 2 -->
+
+                        <!-- * items cart 3 -->
+                        <div data-row="3" class="item-cart flex items-center w-full justify-between py-3">
+                            <div class="imgBox-cart relative mr-0 md:mr-4" style="width: 60px; height: 60px;">
+                                <img class="object-cover absolute h-full w-full object-center"
+                                    src="img/items/item-3.png" alt="Image items cart">
+                            </div>
+                            <div class="info-cart py-0 md:py-3 px-3 mr-10 md:mr-0">
+                                <h5 class="text-lg md:text-xl font-medium capitalize">
+                                    rajut santuy
+                                </h5>
+                                <span class="text-gray-300 text-md md:text-lg">IDR 239.000</span>
+                            </div>
+                            <div class="btn-cart-wrapper flex py-4 px-0 md:px-16 items-center">
+                                <div class="btn-qt flex items-center">
+                                    <button class="bg-gray-400 p-1 md:p-3 rounded-md focus:outline-none"><svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="21"
+                                            viewBox="0 0 21 21">
+                                            <defs>
+                                                <clipPath id="clip-path">
+                                                    <rect width="21" height="21" fill="none" />
+                                                </clipPath>
+                                            </defs>
+                                            <g id="ic_negatif" clip-path="url(#clip-path)">
+                                                <g id="Ellipse_6" data-name="Ellipse 6" fill="none" stroke="#fff"
+                                                    stroke-width="2">
+                                                    <circle cx="10.5" cy="10.5" r="10.5" stroke="none" />
+                                                    <circle cx="10.5" cy="10.5" r="9.5" fill="none" />
+                                                </g>
+                                                <g id="Group_10" data-name="Group 10"
+                                                    transform="translate(-1425.334 -621.417)">
+                                                    <path id="Path_17" data-name="Path 17" d="M0,0V10"
+                                                        transform="translate(1440.648 631.912) rotate(90)" fill="none"
+                                                        stroke="#fff" stroke-linecap="round" stroke-width="2" />
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </button>
+                                    <span class="px-4 text-xl">20</span>
+                                    <button class="bg-green p-1 md:p-3 rounded-md focus:outline-none">
+                                        <svg id="ic_plus" xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+                                            viewBox="0 0 21 21">
+                                            <g id="Ellipse_6" data-name="Ellipse 6" fill="none" stroke="#fff"
+                                                stroke-width="2">
+                                                <circle cx="10.5" cy="10.5" r="10.5" stroke="none" />
+                                                <circle cx="10.5" cy="10.5" r="9.5" fill="none" />
+                                            </g>
+                                            <g id="Group_10" data-name="Group 10"
+                                                transform="translate(-1425.334 -621.417)">
+                                                <path id="Path_16" data-name="Path 16" d="M505,1586.912v10"
+                                                    transform="translate(930.648 -960)" fill="none" stroke="#fff"
+                                                    stroke-linecap="round" stroke-width="2" />
+                                                <path id="Path_17" data-name="Path 17" d="M0,0V10"
+                                                    transform="translate(1440.648 631.912) rotate(90)" fill="none"
+                                                    stroke="#fff" stroke-linecap="round" stroke-width="2" />
+                                            </g>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="delete-btn px-3 md:px-20">
+                                <button id="btn-remove" data-delete-item="3" class="bg-red p-1 md:p-3 rounded-md focus:outline-none">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        width="21" height="21" viewBox="0 0 21 21">
+                                        <defs>
+                                            <clipPath id="clip-path">
+                                                <rect width="21" height="21" fill="none" />
+                                            </clipPath>
+                                        </defs>
+                                        <g id="ic_plus" clip-path="url(#clip-path)">
+                                            <g id="Ellipse_6" data-name="Ellipse 6" fill="none" stroke="#fff"
+                                                stroke-width="2">
+                                                <circle cx="10.5" cy="10.5" r="10.5" stroke="none" />
+                                                <circle cx="10.5" cy="10.5" r="9.5" fill="none" />
+                                            </g>
+                                            <g id="Group_10" data-name="Group 10"
+                                                transform="translate(-1425.334 -621.417)">
+                                                <path id="Path_16" data-name="Path 16" d="M505,1586.912v10"
+                                                    transform="translate(2204.211 -850.829) rotate(45)" fill="none"
+                                                    stroke="#fff" stroke-linecap="round" stroke-width="2" />
+                                                <path id="Path_17" data-name="Path 17" d="M0,0V10"
+                                                    transform="translate(1439.184 635.448) rotate(135)" fill="none"
+                                                    stroke="#fff" stroke-linecap="round" stroke-width="2" />
+                                            </g>
+                                        </g>
+                                    </svg>
+
+                                </button>
+                            </div>
+                        </div>
+                        <!-- * end items cart 3 -->
+
+
+                    </div>
+                    <!-- * end cart table -->
+
+                    <!-- * addres checkout -->
+                    <div class="items-cart py-4 md:py-16 w-full md:w-7/12 flex flex-col">
+                        <h3 class="title-items-cart mb-3 text-xl capitalize">
+                            your address
+                        </h3>
+                        <form action="#">
+                            <!-- Address 1 -->
+                            <div class="flex flex-col py-2">
+                                <label class="mb-2 capitalize" for="address">Address</label>
+                                <input type="text" id="address"
+                                    class="border-none capitalize outline-none rounded-md bg-gray-100 px-4 py-3 placeholder-gray-550"
+                                    placeholder="Alamat lengkap">
+                            </div>
+                            <!-- End Address 1 -->
+                            <!-- Address 2 -->
+                            <div class="flex flex-col py-2">
+                                <label class="mb-2 capitalize" for="address">Address II</label>
+                                <input type="text" id="address"
+                                    class="capitalize border-none outline-none rounded-md bg-gray-100 px-4 py-3 placeholder-gray-550"
+                                    placeholder="Alamat tambahan">
+                            </div>
+                            <!-- End Address 2 -->
+                            <!-- City -->
+                            <div class="flex flex-col py-2">
+                                <label class="mb-2 capitalize" for="city">Address II</label>
+                                <!-- <input type="text" id="city" class="border-none outline-none rounded-md bg-gray-100 px-4 py-3 placeholder-gray-550" placeholder="Pilih city"> -->
+                                <select class="bg-gray-100 py-4 px-4 rounded-md outline-none" name="city" id="city">
+                                    <option value="">Pilih kota</option>
+                                    <option value="Jakarta">Jakarta</option>
+                                    <option value="Bandung">Bandung</option>
+                                    <option value="Bekasi">Bekasi</option>
+                                    <option value="Pontianak">Pontianak</option>
+                                </select>
+                            </div>
+                            <!-- End City -->
+
+                            <!-- country -->
+                            <div class="flex flex-col py-2">
+                                <label class="mb-2 capitalize" for="country">Pilih negara</label>
+                                <!-- <input type="text" id="city" class="border-none outline-none rounded-md bg-gray-100 px-4 py-3 placeholder-gray-550" placeholder="Pilih city"> -->
+                                <select class="bg-gray-100 py-4 px-4 rounded-md outline-none" name="country"
+                                    id="country">
+                                    <option value="">Pilih negara</option>
+                                    <option value="Indonesia">Indonesia</option>
+                                    <option value="Malaysia">Malaysia</option>
+                                    <option value="Singapore">Singapore</option>
+                                </select>
+                            </div>
+                            <!-- End country -->
+                        </form>
+                    </div>
+                    <!-- * addres checkout -->
+                </div>
+                <!-- * end left content items cart  -->
+                <!-- * Right content -->
+                <div class="right w-full md:w-4/12 ">
+                    <div class="bg-gray-500 p-8 rounded-sm" style="height: 500px;">
+                        <h3 class="text-lg capitalize mb-3">informasi biaya</h3>
+                        <!-- * Bought 1 -->
+                        <div class="itemsBought flex py-3 items-center justify-between">
+                            <div class="title">
+                                <h3 class="capitalize text-2xl text-black">jeans pubb</h3>
+                                <span class="text-gray-300">20 items</span>
+                            </div>
+                            <div class="price">
+                                <h3 class="text-green text-lg">IDR 239.000</h3>
+                            </div>
+                        </div>
+                        <!-- *end Bought 1 -->
+                        <!-- * Bought 1 -->
+                        <div class="itemsBought flex py-3 items-center justify-between">
+                            <div class="title">
+                                <h3 class="capitalize text-2xl text-black">batik trendy</h3>
+                                <span class="text-gray-300">20 items</span>
+                            </div>
+                            <div class="price">
+                                <h3 class="text-green text-lg">IDR 239.000</h3>
+                            </div>
+                        </div>
+                        <!-- *end Bought 1 -->
+                        <hr class="mt-4">
+                        <!-- * Courier 1 -->
+                        <div class="Courier flex py-3 items-center justify-between">
+                            <div class="title">
+                                <h3 class="capitalize text-2xl text-black">courier</h3>
+                                <span class="text-gray-300">JNE Express</span>
+                            </div>
+                            <div class="price">
+                                <h3 class="text-green text-lg">IDR 23.000</h3>
+                            </div>
+                        </div>
+                        <!-- *end Courier 1 -->
+                        <!-- * promo 1 -->
+                        <div class="promo flex py-3 items-center justify-between">
+                            <div class="title">
+                                <h3 class="capitalize text-2xl text-black">eid promo</h3>
+                                <span class="text-gray-300">10% OFF</span>
+                            </div>
+                            <div class="price">
+                                <h3 class="text-red text-lg">-IDR 40.000</h3>
+                            </div>
+                        </div>
+                        <!-- *end promo 1 -->
+                        <!-- * Courier 1 -->
+                        <div class="Courier flex py-3 items-center justify-between">
+                            <div class="title">
+                                <h3 class="capitalize text-2xl text-black">total harga</h3>
+                            </div>
+                            <div class="price">
+                                <h3 class="text-blue text-lg">IDR 443.000</h3>
+                            </div>
+                        </div>
+                        <!-- *end Courier 1 -->
+
+                    </div>
+                    <div class="btn-wrapper py-5 flex justify-between">
+                        <a href="index.html" class="bg-gray-500 font-medium text-gray-550 text-lg py-3 px-20 rounded-md capitalize">
+                            cancel
+                        </a>
+                        <a href="success.html" class="bg-orange font-medium text-white text-lg py-3 px-16 rounded-md capitalize">
+                            checkout
+                        </a>
+                        
+                    </div>
+                </div>
+                <!-- * End Right content -->
+            </div>
+            <!-- * end main content -->
+        </div>
+    </section>
+    <!-- END : ITEMS CART SECTION -->
+
+
+
+
+
+
+    <!-- START : FOOTER -->
+    <footer class="px-6 md:px-24 py-4 md:pt-16 bg-black-hero">
+        <div class="container mx-auto">
+            <div class="content flex flex-col justify-center">
+                <div class="logo py-4 justify-center flex items-center text-white">
+                    <img class="mr-3" src="img/logo/logo_small.svg" alt="logo hefastore">
+                    <h2 class="font-display font-semibold text-2xl">Hefastore</h2>
+                </div>
+                <div class="flex flex-wrap justify-center">
+                    <!-- * aside menu 1 -->
+                    <div class="aside-menu w-full md:w-2/12 text-white capitalize">
+                        <h2 class="py-3 relative text-xl font-semibold">overview <button
+                                class="list-trigger absolute right-0 md:invisible visible transition duration-300 transform focus:outline-none rotate-0"
+                                style="top: 50%">
+                                <svg width="20" height="9" viewBox="0 0 20 9" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1L9.75 7.5L18.5 1" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button></h2>
+                        <ul class="capitalize h-0 md:h-auto overflow-hidden transition duration-300 text-gray-300">
+                            <li class="mt-3"><a href="#" class="hover:underline">shipping</a></li>
+                            <li class="mt-3"><a href="#" class="hover:underline">refund</a></li>
+                            <li class="mt-3"><a href="#" class="hover:underline">promotion</a></li>
+                        </ul>
+                    </div>
+                    <!-- * end aside menu 1 -->
+
+
+                    <!-- * aside menu 2 -->
+                    <div class="aside-menu w-full md:w-2/12 text-white capitalize">
+                        <h2 class="py-3 relative text-xl font-semibold">company <button
+                                class="list-trigger absolute right-0 md:invisible visible transition duration-300 transform focus:outline-none rotate-0"
+                                style="top: 50%">
+                                <svg width="20" height="9" viewBox="0 0 20 9" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1L9.75 7.5L18.5 1" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button></h2>
+                        <ul
+                            class="capitalize h-0 md:h-auto overflow-hidden md:visible transition duration-500 text-gray-300">
+                            <li class="mt-3"><a href="#" class="hover:underline">about</a></li>
+                            <li class="mt-3"><a href="#" class="hover:underline">career</a></li>
+                            <li class="mt-3"><a href="#" class="hover:underline">contact us</a></li>
+                        </ul>
+                    </div>
+                    <!-- * end aside menu 2 -->
+
+
+                    <!-- * aside menu 3 -->
+                    <div class="aside-menu w-full md:w-2/12 text-white capitalize">
+                        <h2 class="py-3 relative text-xl font-semibold">explore <button
+                                class="list-trigger absolute right-0 md:invisible visible transition duration-300 transform focus:outline-none rotate-0"
+                                style="top: 50%">
+                                <svg width="20" height="9" viewBox="0 0 20 9" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1L9.75 7.5L18.5 1" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button></h2>
+                        <ul
+                            class="capitalize h-0 md:h-auto overflow-hidden md:visible transition duration-500 text-gray-300">
+                            <li class="mt-3"><a href="#" class="hover:underline">terms & conds</a></li>
+                            <li class="mt-3"><a href="#" class="hover:underline">privacy policy</a></li>
+                            <li class="mt-3"><a href="#" class="hover:underline">for developer</a></li>
+                        </ul>
+                    </div>
+                    <!-- * end aside menu 3 -->
+
+                    <!-- * aside menu subscribe -->
+                    <div class="w-full md:w-3/12">
+                        <h2 class="text-xl py-3 text-white font-semibold capitalize">special letter</h2>
+                        <form action="#">
+                            <label class="w-full relative">
+                                <input type="text" value="youremail@mail.com"
+                                    class="w-full focus:outline-none rounded-xl px-5 py-3 bg-white"
+                                    placeholder="Your email address">
+                                <button
+                                    class="bg-orange absolute rounded-lg right-0 p-3 text-white hover:bg-orange-dark transition-all duration-200">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" class="fill-current"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M23.6177 0.411971C23.6163 0.410624 23.6152 0.409187 23.6138 0.407839C23.6124 0.406492 23.6109 0.405414 23.6095 0.404157C23.236 0.049307 22.7002 -0.0573008 22.2098 0.126411L0.833871 8.13353C0.268743 8.34518 -0.0623361 8.87521 0.0098048 9.4523C0.0821332 10.0294 0.53462 10.4694 1.13589 10.547L11.5833 11.8968C11.6028 11.8994 11.6185 11.9143 11.6212 11.9332L13.0301 21.9417C13.1112 22.5177 13.5704 22.9512 14.1729 23.0204C14.2279 23.0268 14.2824 23.0298 14.3364 23.0298C14.8735 23.0298 15.3486 22.7229 15.5495 22.231L23.9077 1.75274C24.0994 1.28302 23.9882 0.76983 23.6177 0.411971ZM1.30534 9.34475C1.2819 9.34169 1.27136 9.34039 1.26728 9.30788C1.26325 9.27537 1.27319 9.27159 1.29508 9.26347L21.2946 1.77187L11.9404 10.7333C11.8794 10.7163 1.30534 9.34475 1.30534 9.34475ZM14.37 21.7892C14.3614 21.8102 14.358 21.8198 14.3236 21.8158C14.2897 21.8119 14.2883 21.8017 14.2852 21.7794C14.2852 21.7794 12.8535 11.6495 12.8358 11.5911L22.19 2.62972L14.37 21.7892Z" />
+                                    </svg>
+                                </button>
+                            </label>
+                        </form>
+                    </div>
+                    <!-- * end aside menu subscribe -->
+                </div>
+            </div>
+        </div>
+        <!-- * copyright -->
+        <hr class="mt-7">
+        <div class="py-3 text-white flex justify-center items-center text-center">
+            <h3>Copyright 2021@All Reserved Hefastore by Alfin Abdurrafi</h3>
+        </div>
+    </footer>
+    <!-- END : FOOTER -->
+
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>

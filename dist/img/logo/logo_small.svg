@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="40" height="40" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="logo_small" clip-path="url(#clip-path)">
+    <rect id="Rectangle_7" data-name="Rectangle 7" width="40" height="40" rx="14" fill="#f9b234"/>
+    <g id="Ellipse_2" data-name="Ellipse 2" transform="translate(8 8)" fill="none" stroke="#fff" stroke-width="6">
+      <circle cx="12" cy="12" r="12" stroke="none"/>
+      <circle cx="12" cy="12" r="9" fill="none"/>
+    </g>
+  </g>
+</svg>
